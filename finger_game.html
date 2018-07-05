@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Finger Game</title>
+        
+    
+    </head>
+    <body>
+        <p>Enter how many fingers I'm holding up</p>
+        <input type="text" id="input">
+        <button id="button">Submit</button>
+       
+        
+        
+        <script type="text/javascript">
+            document.getElementById("button").onclick=function(){
+                var input = "";
+                var number = Math.floor(Math.random()*6);
+                
+                
+                input = document.getElementById("input").value;
+                if (input==number){
+                    alert("Yes! You are Right")
+                }else{
+                    alert("Nope, the number was " + number);
+                }
+                
+            }
+           
+                                  
+                        
+           
+        </script>       
+        
+        
+    </body>
+
+
+
+
+</html>
